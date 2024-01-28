@@ -56,8 +56,10 @@ model:
   class_path: meerqat.train.trainee.BiEncoder
   init_args:
     question_class: ECAEncoder
-    question_model_name_or_path: experiments/dpr/triviaqa/lightning_logs/version_0/step=13984/question_model_bert
-    context_model_name_or_path: experiments/dpr/triviaqa/lightning_logs/version_0/step=13984/context_model_bert
+    # question_model_name_or_path: experiments/dpr/triviaqa/lightning_logs/version_0/step=13984/question_model_bert
+    # context_model_name_or_path: experiments/dpr/triviaqa/lightning_logs/version_0/step=13984/context_model_bert
+    question_model_name_or_path: experiments/pretrained_models/question_eca_l6_wit_mict
+    context_model_name_or_path: experiments/pretrained_models/context_eca_l6_wit_mict
     warmup_steps: 100
     freeze_regex: ".*bert_model.encoder.layer.([6789]|1[01]).*"
     gradient_checkpointing: true

@@ -74,7 +74,7 @@ ImageFile.LOAD_TRUNCATED_IMAGES = True
 # constant paths
 DATA_ROOT_PATH = (Path(ROOT_PATH).parent.parent/"data").resolve()
 COMMONS_PATH = DATA_ROOT_PATH / "Commons"
-# IMAGE_PATH = Path(os.environ.get("VIQUAE_IMAGES_PATH", COMMONS_PATH))
+#IMAGE_PATH = Path(os.environ.get("VIQUAE_IMAGES_PATH", COMMONS_PATH))
 IMAGE_PATH = (Path(ROOT_PATH).parent.parent/"viquae_images/images").resolve() # if you get error regarding this, uncomment above line
 KVQA_PATH = DATA_ROOT_PATH/"KVQA"
 OKVQA_PATH = DATA_ROOT_PATH/"OK-VQA"

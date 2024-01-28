@@ -144,3 +144,12 @@ drafts/
 
 # rsync stuff
 /push_*.sh
+
+# anything start with viquae_
+viquae_*
+
+# pretrained model
+experiments/pretrained_models
+
+# images
+/images

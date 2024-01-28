@@ -33,7 +33,7 @@ def main():
         # same default as transformers although it is unlikely that the calls are in the exact same order
         # N. B. called with `workers=True` in LightningCLI
         seed_everything_default=42, 
-        description='Main training script based on pytorch lightning.'
+        #description='Main training script based on pytorch lightning.'
     )
     return cli
     

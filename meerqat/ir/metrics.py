@@ -192,7 +192,7 @@ def find_relevant_dataset(dataset_path, save_as='provenance_indices', **kwargs):
     kwargs['save_as'] = save_as
     kwargs['qrels'] = {}
     dataset = dataset.map(find_relevant_item, fn_kwargs=kwargs)
-    dataset.save_to_disk(dataset_path)   
+    dataset.save_to_disk(str(dataset_path) + "/new")
     qrels = kwargs['qrels']
     if isinstance(dataset, DatasetDict):
         for split, subset in dataset.items():
